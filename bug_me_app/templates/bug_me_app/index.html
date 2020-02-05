@@ -178,7 +178,7 @@
                 <button id="button" v-on:click="createTicket">Create</button>
             </p>
             <p v-if="newTicket.id != '' ">
-                <button id="button" v-on:click="submitFile()">Update</button>
+                <button id="button" v-on:click="updateTicket">Update</button>
             </p>
             </form>
         </div>
@@ -289,10 +289,10 @@
                             }
                         }
                         ).then(function() {
-                            console.log('success');
+                            //console.log('success');
                         })
                         .catch(function() {
-                            console.log('fail');
+                            //console.log('fail');
                         });
                     },
                 submitFile() {
@@ -307,10 +307,10 @@
                         }
                     }
                 ).then(function(){
-                    console.log('success');
+                    //console.log('success');
                 })
                 .catch(function(){
-                    console.log('fail');
+                    //console.log('fail');
                 });
                 },
                 handleFileUpload(){
