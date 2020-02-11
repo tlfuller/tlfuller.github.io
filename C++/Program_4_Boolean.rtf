@@ -1,0 +1,62 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2511
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww17120\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 // Program 4_1\
+// Boolean and Conditionals\
+\
+#include <iostream>\
+using namespace std;\
+\
+int main() \{\
+	int age;\
+	cout << "Enter your age: ";\
+	cin >> age;\
+	bool eligible_for_discount;\
+	eligible_for_discount = ((age < 18 ) || (age >= 65));\
+	cout << eligible_for_discount << endl;\
+\}\
+\
+// Program 4_2\
+// Boolean and Conditionals with if statements\
+\
+#include <iostream>\
+using namespace std;\
+\
+int main() \{\
+	int age;\
+	cout << "Enter your age: ";\
+	cin >> age;\
+	if ((age < 18 ) || (age >= 65)) \{\
+	    cout << "You're eligible for the discount!" << endl;\
+	\}\
+	\
+\}\
+\
+// Program 4_3\
+// Boolean and Conditionals with else-if statements\
+\
+#include <iostream>\
+using namespace std;\
+\
+int main() \{\
+	int age;\
+	cout << "What is your age? " << endl;\
+	cin >> age;\
+	float cost;\
+	if (age < 3) \{\
+	    cost = 0.0;\
+	\} else if (age <= 5) \{\
+	    cost = 1.0;\
+	\} else if (age <= 10) \{\
+	    cost = 3.0;\
+	\} else if (age <= 17) \{\
+	    cost = 5.0;\
+	\} else \{\
+	    cost = 6.0;\
+	\}\
+	cout << "Your cost is: $" << cost << endl;\
+\}}
